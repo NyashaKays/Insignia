@@ -11,11 +11,11 @@ Author URL: http//:insignia.co.zw
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-    --bs-blue: #0d6efd;
+    --bs-blue: #00625c;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1 --bs-pink: #d63384;
     --bs-red: #dc3545;
-    --bs-orange: #fd7e14;
+    --bs-orange: #f48630;
     --bs-yellow: #ffc107;
     --bs-green: #198754;
     --bs-teal: #20c997;
@@ -30,7 +30,7 @@ Author URL: http//:insignia.co.zw
     --bs-warning: #ffc107;
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
-    --bs-dark: #212529;
+    --bs-dark: #111418;
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
@@ -153,6 +153,21 @@ h6 {
     font-size: 1rem
 }
 
+::-webkit-scrollbar{
+    height: 2px;
+    width: 2px;
+}
+
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+}
+
+::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+}
+
 p {
     margin-top: 0;
     margin-bottom: 1rem
@@ -160,11 +175,11 @@ p {
 header{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: fixed;
     width: 100vw;
     gap: calc(2rem+1vw);
-    padding: 15px 10px;
+    padding: 15px 25px;
 }
 .logo{
     width: 10rem;
@@ -184,7 +199,7 @@ nav ul{
 nav ul li a{
     text-decoration: none;
     font-size: 1.1rem;
-    color: var(--bs-orange);
+    color: var(--bs-white);
     font-weight: 700;
 }
 .btn{
@@ -195,8 +210,14 @@ nav ul li a{
     font-weight: 700;
     text-decoration: none;
     border-radius: 5px;
+    outline: 2px solid var(--bs-blue);
+}
+.btn.alt{
+    background-color: transparent;
+    color: var(--bs-blue);
 }
 
+/*Hero*/
 .hero{
     height: 100vh;
     display: flex;
@@ -209,15 +230,15 @@ nav ul li a{
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 150px;
+    padding: 150px 25px;
     background-image: url(../Images/depositphotos_308064492-stock-ph.jpeg);
     background-size: cover;
-    background-color: #272727bd;
+    background-color: var(--bs-dark);
     background-blend-mode: multiply;
     color: #f8f9fa;
 }
 .hero .details .container{
-    width: clamp(65%,1250px,90%);
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -234,10 +255,12 @@ nav ul li a{
 }
 .hero .highlights{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     gap: 0;
+    background-color: var(--bs-dark);
+    padding: 35px 0px;
 }
 .hero .highlights .highlight{
     display: flex;
@@ -245,7 +268,300 @@ nav ul li a{
     justify-content: center;
     text-align: left;
     flex-direction: column;
-    width: clamp(25rem,33.3%,50rem);
+    width: clamp(33.3%, 25rem, 100%);
     padding: 50px;
-    background-color: #272727bd;
+    color: var(--bs-white);
+}
+.hero .highlights .highlight h6{
+    font-weight: 700;
+    color: var(--bs-orange);
+}
+.hero .highlights .highlight h6{
+    font-size: 1.2rem;
+}
+/*Our Story*/
+.our-story{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 25px;
+}
+.our-story .section{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+.our-story .section.txt{
+    align-items: flex-start;
+    text-align: left;
+}
+.our-story .section img{
+    width: clamp(35%, 35rem, 90%);
+    border-radius: 20px;
+}
+.our-story .section h6{
+    color: var(--bs-orange);
+    font-weight: 700;
+}
+.our-story .section h3{
+    text-transform: capitalize;
+    font-weight: 500;
+    width: 25ch;
+}
+.our-story .section h3 span{
+    font-weight: 700;
+}
+.our-story .section p{
+    width: 50ch;
+}
+.our-story .section .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*Who we are*/
+.us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.us .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    padding: 25px;
+}
+.us .container h2{
+    font-size: 2.5em;
+    width: 35ch;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.us .container h2 span{
+    font-weight: 700;
+}
+.us .container .ideas{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.us .container .ideas .idea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: clamp(20%, 30em, 90%);
+    text-align: center;
+    margin: 10px;
+}
+.us .container .ideas .idea .icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.5em;
+    width: 4.5em;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: var(--bs-orange);
+    color: var(--bs-light);
+    font-size: 1.5em;
+}
+.us .container .ideas .idea h3{
+    font-size: 1.5em;
+}
+.us .container .ideas .idea:hover{
+    cursor: pointer;
+}
+.us .container .ideas .idea:hover h3{
+    color: var(--bs-orange);
+}
+.us .container .ideas .idea p{
+    width: 30ch;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--bs-dark);
+    padding: 25px;
+}
+.footer-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 75px;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.footer-head .head-text h2{
+    color: var(--bs-light);
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+.footer-main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 25px;
+    line-height: 1.5em;
+    padding: 15px;
+}
+.footer-main .about{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+.footer-main h4{
+    color: var(--bs-light);
+}
+.footer-main p{
+    width: 25ch;
+    color: var(--bs-gray);
+}
+.footer-main a{
+    text-decoration: none;
+    color: var(--bs-gray);
+}
+.footer-main a:hover{
+    color: var(--bs-light);
+}
+.footer-main ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-main form{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 15px;
+}
+.footer-main form input{
+    padding: 10px 15px;
+    background-color: var(--bs-light);
+    border: 1px solid var(--bs-gray);
+    border-radius: 5px;
+}
+.footer-main form button{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 175px;
+    padding: 5px;
+    cursor: pointer;
+    color: var(--bs-orange);
+}
+.socials{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.socials a{
+    background-color: var(--bs-orange);
+    height: 2.5em;
+    width: 2.5em;
+    font-size: 1em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bs-light);
+    border-radius: 5px;
+}
+.last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bs-gray);
+}
+.last h6{
+    font-weight: 100;
+    font-size: 0.8em;
+}
+.last a{
+    color: var(--bs-light);
+    text-decoration: none;
+    font-weight: 900;
+}
+.last a:hover{
+    color: var(--bs-blue);
+    text-decoration: underline;
 }
