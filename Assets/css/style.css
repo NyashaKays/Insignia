@@ -225,6 +225,11 @@ nav ul li a{
 .btn i{
     font-weight: 900;
 }
+@media(max-width: 1200px){
+    header nav{
+        display: none;
+    }
+}
 
 /*Hero*/
 .hero{
@@ -328,6 +333,9 @@ nav ul li a{
     align-items: flex-start;
     text-align: left;
 }
+.our-story .section.txt h3{
+    width: clamp(50%, 35ch, 90%);
+}
 .our-story .section.txt p{
     width: clamp(50%, 35ch, 90%);
 }
@@ -377,7 +385,7 @@ nav ul li a{
 }
 .us .container h2{
     font-size: 2.5em;
-    width: 35ch;
+    width: clamp(50%, 35ch, 90%);
     text-align: center;
     text-transform: capitalize;
     font-weight: 500;
@@ -385,6 +393,7 @@ nav ul li a{
 .us .container h2 span{
     font-weight: 700;
 }
+
 .us .container .ideas{
     display: flex;
     align-items: flex-start;
