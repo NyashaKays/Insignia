@@ -470,6 +470,43 @@ nav ul li a{
     border-radius: 15px;
     background-color: #111418;
 }
+.what-we-do .what-highlights .item.one{
+    background-image: url(../Images/depositphotos_308064492-stock-ph.jpeg);
+    background-size: cover;
+}
+.what-we-do .what-highlights .item.two{
+    background-image: url(../Images/depositphotos_308064492-stock-ph.jpeg);
+    background-size: cover;
+}
+.what-we-do .what-highlights .item.three{
+    background-image: url(../Images/depositphotos_308064492-stock-ph.jpeg);
+    background-size: cover;
+}
+.what-we-do .what-highlights .item.four{
+    background-image: url(../Images/depositphotos_308064492-stock-ph.jpeg);
+    background-size: cover;
+}
+
+/*Get Quote*/
+#get-quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+#get-quote .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 50px;
+    border-radius: 15px;
+    background-color: #8d3f03ab;
+    background-image: url(../Images/5d92b86215962a45ebceec5c_5c95803.jpg);
+    background-blend-mode: multiply;
+    color: var(--bs-light);
+}
 
 
 
