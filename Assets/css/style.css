@@ -484,15 +484,15 @@ nav ul li a{
     background-size: cover;
 }
 .what-we-do .what-highlights .item.two{
-    background-image: url(../Images/depositphotos_308064492-stock-ph.jpeg);
+    background-image: url(../Images/business-leader-interviewing-job-candidate-min.jpg);
     background-size: cover;
 }
 .what-we-do .what-highlights .item.three{
-    background-image: url(../Images/depositphotos_308064492-stock-ph.jpeg);
+    background-image: url(../Images/5d92b86215962a45ebceec5c_5c95803.jpg);
     background-size: cover;
 }
 .what-we-do .what-highlights .item.four{
-    background-image: url(../Images/depositphotos_308064492-stock-ph.jpeg);
+    background-image: url(../Images/What-Areas-Of-Graphic-Design-Sho.jpg);
     background-size: cover;
 }
 
@@ -512,7 +512,9 @@ nav ul li a{
     padding: 50px;
     border-radius: 15px;
     background-color: #8d3f03ab;
-    background-image: url(../Images/5d92b86215962a45ebceec5c_5c95803.jpg);
+    background-image: url(../Images/business-hands-joined-together-teamwork-min.jpg);
+    background-position: center;
+    background-size: cover;
     background-blend-mode: multiply;
     color: var(--bs-light);
 }
