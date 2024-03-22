@@ -181,6 +181,12 @@ header{
     gap: calc(2rem+1vw);
     padding: 15px 25px;
 }
+header.active{
+    background-color: var(--bs-light);
+}
+header.active nav ul li a{
+    color: var(--bs-dark);
+}
 .logo{
     width: 10rem;
 }
@@ -216,14 +222,18 @@ nav ul li a{
     background-color: transparent;
     color: var(--bs-blue);
 }
+.btn i{
+    font-weight: 900;
+}
 
 /*Hero*/
 .hero{
-    height: 100vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    background-color: var(--bs-dark);
 }
 .hero .details{
     display: flex;
@@ -253,6 +263,15 @@ nav ul li a{
 .hero .details h1 span{
     font-weight: 700;
 }
+@media(max-width: 1200px){
+    .hero .details h1{
+        font-size: 2.5em;
+    }
+
+    .hero .details h6{
+        width: 24ch;
+    }
+}
 .hero .highlights{
     display: flex;
     align-items: flex-start;
@@ -281,16 +300,24 @@ nav ul li a{
 }
 /*Our Story*/
 .our-story{
-    height: fit-content;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 50px 10px;
+    height: fit-content;
+}
+.our-story .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 50px 25px;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
 }
 .our-story .section{
-    width: 50%;
+    width: clamp(50%, 40em, 90%);
     padding: 10px;
     display: flex;
     align-items: flex-end;
@@ -300,6 +327,9 @@ nav ul li a{
 .our-story .section.txt{
     align-items: flex-start;
     text-align: left;
+}
+.our-story .section.txt p{
+    width: clamp(50%, 35ch, 90%);
 }
 .our-story .section img{
     width: clamp(35%, 35rem, 90%);
@@ -324,6 +354,7 @@ nav ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -357,14 +388,16 @@ nav ul li a{
 .us .container .ideas{
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .us .container .ideas .idea{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: clamp(20%, 30em, 90%);
+    width: clamp(20%, 25em, 90%);
     text-align: center;
     margin: 10px;
 }
@@ -392,6 +425,50 @@ nav ul li a{
 .us .container .ideas .idea p{
     width: 30ch;
     margin-top: 20px;
+}
+
+/*What we DO*/
+.what-we-do{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 25px;
+    gap: 25px;
+    width: 100%;
+}
+.what-we-do .info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 837px;
+}
+.what-we-do .info p{
+    width: clamp(50%, 40ch, 90%);
+}
+.what-we-do .info h3{
+    width: clamp(50%, 35ch, 90%);
+}
+.what-we-do .info h6{
+    color: var(--bs-orange);
+}
+.what-we-do .what-highlights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 837px;
+}
+.what-we-do .what-highlights .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #111418;
 }
 
 
@@ -476,6 +553,7 @@ footer{
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 25px;
     line-height: 1.5em;
     padding: 15px;
