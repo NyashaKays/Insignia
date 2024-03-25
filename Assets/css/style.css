@@ -262,7 +262,7 @@ nav ul li a{
 }
 .hero .details h1{
     font-size: 5rem;
-    width: 10ch;
+    width: 15ch;
     font-weight: 500;
 }
 .hero .details h1 span{
@@ -273,9 +273,6 @@ nav ul li a{
         font-size: 2.5em;
     }
 
-    .hero .details h6{
-        width: 24ch;
-    }
 }
 .hero .highlights{
     display: flex;
@@ -519,60 +516,6 @@ nav ul li a{
     color: var(--bs-light);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*footer*/
 footer{
     display: flex;
@@ -690,4 +633,267 @@ footer{
 .last a:hover{
     color: var(--bs-blue);
     text-decoration: underline;
+}
+
+
+
+
+/*Other Pages*/
+
+.mini-hero{
+    width: 100%;
+    height: clamp(20em, 50vh, 40em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1b9a;
+    background-image: url(../Images/article_cover.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    color: var(--bs-light);
+}
+.mini-hero .container span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7978784f;
+    padding: 10px;
+    border-radius: 10px;
+}
+.mini-hero .container span a{
+    padding: 0;
+    margin-right: 10px;
+    color: var(--bs-orange);
+    text-decoration: none;
+    font-weight: 900;
+}
+.mini-hero .container span p{
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    flex-direction: column;
+    padding: 20px;
+}
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.about .container .img-box{
+    height: 25em;
+    width: 25em;
+    background-color: #21222475;
+    border-radius: 15px;
+    background-image: url(../Images/p1010899.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.about .container .desc{
+    width: clamp(25%, 35em, 90%);
+    gap: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+.about .container .desc h6{
+    color: var(--bs-orange);
+    font-weight: 900;
+}
+.about .container .desc h2{
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.about .container .desc span{
+    font-weight: 700;
+}
+
+.isusu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.isusu .item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    width: clamp(15%, 15em, 90%);
+}
+.isusu .item h2{
+    font-weight: 100;
+}
+.isusu .item h2 span{
+    font-weight: 700;
+}
+.isusu .item h4{
+    margin: 0;
+}
+.isusu .item .numeral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bs-orange);
+    background-color: #ffe9d5;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+}
+
+.our-process{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 80px 25px;
+    width: 100%;
+    color: var(--bs-light);
+    flex-wrap: wrap;
+    background-color: #000000c0;
+    background-image: url(../Images/graphic-designer-desk.jpeg-1.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.our-process .sectional{
+    width: clamp(40%, 25em, 90%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+.our-process .sectional h6{
+    color: var(--bs-orange);
+    margin-bottom: 0;
+}
+.our-process .sectional p{
+    color: #9a9c9e;
+}
+
+.our-process .steps{
+    width: clamp(25%, 25em, 90%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.our-process .steps .item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.our-process .steps .item .icon{
+    color: var(--bs-orange);
+    font-size: 2em;
+}
+.our-process .steps .item .text p{
+    color: #9a9c9e;
+}
+
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px;
+    width: 100%;
+}
+.team h6{
+    color: var(--bs-orange);
+}
+.team h1{
+    font-weight: 100;
+}
+.team h1 span{
+    font-weight: 700;
+}
+.team .the-boys{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 25px;
+}
+.team .the-boys .mandem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.team .the-boys .mandem h3{
+    margin: 0;
+}
+.team .the-boys .mandem .mandem-img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+    height: 30em;
+    width: 20em;
+    background-color: #4140407c;
+    border-radius: 15px;
+}
+.team .the-boys .mandem .mandem-img .socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.team .the-boys .mandem .mandem-img .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: var(--bs-light);
+    background-color: #252323be;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.team .the-boys .mandem .mandem-img .social:hover{
+    background-color: var(--bs-dark);
+    transition: 0.1s all ease;
+}
+.team .the-boys .mandem .mandem-img:hover{
+    background-blend-mode: multiply;
+}
+.team .the-boys .mandem .mandem-img:hover .socials{
+    opacity: 1;
+}
+.team .the-boys .mandem .mandem-img.nyasha{
+    background-image: url(../Images/compress_IMG_0180.jpg);
+    background-size: cover;
+}
+.team .the-boys .mandem .mandem-img.prince{
+    background-image: url(../Images/prince.jpg);
+    background-size: cover;
+}
+.team .the-boys .mandem .mandem-img.tashinga{
+    background-image: url(../Images/tashinga.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.team .the-boys .mandem .mandem-img.bryce{
+    background-image: url(../Images/bryce.jpg);
+    background-size: cover;
+    background-position: center;
 }
