@@ -652,6 +652,10 @@ footer{
     background-size: cover;
     color: var(--bs-light);
 }
+.mini-hero.services{
+    background-image: url(../Images/papers.co-ne80-coding-screen-dig.jpg);
+}
+
 .mini-hero .container span{
     display: flex;
     align-items: center;
@@ -691,7 +695,7 @@ footer{
 }
 .about .container .img-box{
     height: 25em;
-    width: 25em;
+    width: 20em;
     background-color: #21222475;
     border-radius: 15px;
     background-image: url(../Images/p1010899.jpg);
@@ -722,8 +726,19 @@ footer{
 .isusu{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+    width: 100%;
+}
+.isusu .la-items{
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: clamp(70%, 75em, 95%);
 }
 .isusu .item{
     display: flex;
@@ -888,7 +903,7 @@ footer{
     background-size: cover;
 }
 .team .the-boys .mandem .mandem-img.tashinga{
-    background-image: url(../Images/tashinga.jpeg);
+    background-image: url(../Images/IMG_5814.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -896,4 +911,61 @@ footer{
     background-image: url(../Images/bryce.jpg);
     background-size: cover;
     background-position: center;
+}
+.about .container .img-boxes .img-box{
+    background-image: url(../Images/compress_business-jzw8ax93flqonkce.png);
+    background-position: center;
+}
+
+
+.how-we-do-it{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: var(--bs-light);
+}
+.how-we-do-it h6{
+    color: var(--bs-orange);
+}
+.how-we-do-it h1{
+    font-weight: 100;
+    text-transform: capitalize;
+}
+.how-we-do-it h1 span{
+    font-weight: 700;
+}
+.how-we-do-it .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 25px;
+}
+@media(max-width: 1200px){
+    .how-we-do-it .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+.how-we-do-it .container .box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bs-white);
+    width: 20em;
+    height: 18em;
+    padding: 30px;
+    border-radius: 5px;
+}
+.how-we-do-it .container .box .icon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 2.25em;
+    margin-bottom: 20px;
+    color: var(--bs-blue);
 }
