@@ -969,3 +969,13 @@ footer{
     margin-bottom: 20px;
     color: var(--bs-blue);
 }
+
+.service-link{
+    text-decoration: none;
+    color: var(--bs-orange);
+    font-size: 1.2em;
+}
+.service-link:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
